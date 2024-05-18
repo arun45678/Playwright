@@ -1,5 +1,5 @@
-const{test,expect}=require('@playwright/test')
-
+const{test,expect}=require('@playwright/test') 
+const testdataqa=JSON.parse(JSON.stringify(require("../data/testdata.json"))) 
 test("Verify Application login",async function({page}){
 
 await page.goto('https://systemqa.asite.com/login')
@@ -12,8 +12,8 @@ await page.goto('https://systemqa.asite.com/login')
  await expect(page).toHaveTitle("Login")
 
 
-  await page.frameLocator('iframe[name="iFrameAsite"]').getByPlaceholder('Login (Email)').fill('akhatri@asite.com');
-  await page.frameLocator('iframe[name="iFrameAsite"]').getByPlaceholder('Password').fill('Asite@123');
+  await page.frameLocator('iframe[name="iFrameAsite"]').getByPlaceholder('Login (Email)').fill(testdataqa.username);
+  await page.frameLocator('iframe[name="iFrameAsite"]').getByPlaceholder('Password').fill(testdataqa.password);
   await page.frameLocator('iframe[name="iFrameAsite"]').getByRole('button', { name: 'Login' }).click();
 
   const Pagetitle=await page.title()
