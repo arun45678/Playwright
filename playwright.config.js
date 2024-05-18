@@ -12,7 +12,7 @@ const { on } = require('events');
  * @see https://playwright.dev/docs/test-configuration
  */
 module.exports = defineConfig({
-  testDir: './tests',
+  testDir: './src/tests',
   timeout:30*1000,
   expect:{
 
