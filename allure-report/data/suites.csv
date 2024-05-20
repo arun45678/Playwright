@@ -1,4 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Sun May 19 14:01:10 IST 2024","Sun May 19 14:01:11 IST 2024","500","webkit","api.test.spec.js","","","","API Get Request",""
-"passed","Sun May 19 14:01:10 IST 2024","Sun May 19 14:01:11 IST 2024","500","firefox","api.test.spec.js","","","","API Get Request",""
-"passed","Sun May 19 14:01:10 IST 2024","Sun May 19 14:01:11 IST 2024","774","chromium","api.test.spec.js","","","","API Get Request",""
