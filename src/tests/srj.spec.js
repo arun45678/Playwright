@@ -26,7 +26,7 @@ test('API Get Request', async ({ request }) => {
 }
 )
 */
-test.only('API Post Request', async ({ request }) => {
+test('API Post Request', async ({ request }) => {
 
     const response = await request.post('https://dmsqa.asite.com/apilogin/', {
         form: {
