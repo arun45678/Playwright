@@ -21,5 +21,5 @@ test('API Get Request', async ({ request }) => {
     expect(respons.status()).toBe(200)
     //const test = await respons.text()
    // expect(test).toContain('Arun')
-    console.log(await respons.json())
+    //console.log(await respons.json())
 })
