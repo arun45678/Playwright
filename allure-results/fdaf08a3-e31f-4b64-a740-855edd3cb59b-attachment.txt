@@ -1,0 +1,29 @@
+This is your Session ID== undefined
+<html><head><meta http-equiv=Pragma content=no-cache><meta http-equiv=Expires content=1><meta http-equiv=Pragma content=no-cache><title>Unauthorised Access</title>
+<script language="JavaScript" type="text/javascript">
+var wt = window.top; 
+var rURL = "https://systemqa.asite.com/unauthorised";
+if(window.location.origin == 'https://worksqa.asite.com') {
+	rURL = "https://worksqa.asite.com/asiteworks/error-page?errorCode=unauthorised";
+}
+try{
+	if(wt.frames && wt.frames['LfRyDataFrame']){
+		wt.frames['LfRyDataFrame'].flgSnubSignOut = false;
+		wt.location = self.location;
+	}
+	else if(wt.frames && wt.frames['DataFrame']){
+		wt.frames['DataFrame'].flgSnubSignOut = false;
+		wt.location = self.location;
+	}
+	else if(wt.frames && wt.frames['headerFrame']){
+		wt.frames['headerFrame'].isLogoutClicked = true;
+		wt.location = self.location;
+	}
+	else{
+		wt.location = rURL
+	}
+}catch(e){
+	wt.location = rURL
+}
+</script></head><body></body><head><meta http-equiv=Pragma content=no-cache><meta http-equiv=Expires content=1><meta http-equiv=Pragma content=no-cache></head></html>
+

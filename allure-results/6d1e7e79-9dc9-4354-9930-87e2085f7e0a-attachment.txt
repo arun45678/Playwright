@@ -1,0 +1,3 @@
+This is currrent page title is === async title() {
+    return await this._mainFrame.title();
+  }

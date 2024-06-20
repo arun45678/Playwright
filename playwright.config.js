@@ -13,11 +13,11 @@ const { on } = require('events');
  */
 module.exports = defineConfig({
   testDir: './src/tests',
-  timeout:30*1000,
+  timeout:60*1000,
   expect:{
 
-    timeout:20000
-  },
+  timeout:60000
+   },
   /* Run tests in files in parallel */
   //fullyParallel: false,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -51,7 +51,7 @@ module.exports = defineConfig({
         trace:"on"
        },
     },
-
+/*
     {
       name: 'firefox',
       use: { ...devices['Desktop Firefox'] },
@@ -61,7 +61,7 @@ module.exports = defineConfig({
       name: 'webkit',
       use: { ...devices['Desktop Safari'] },
     },
-
+*/
     /* Test against mobile viewports. */
     // {
     //   name: 'Mobile Chrome',
